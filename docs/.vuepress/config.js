@@ -13,9 +13,9 @@ module.exports = {
                 logo: '/misitebao.png',
                 selectText: 'Languages',
                 label: 'English',
-                repo: 'vuejs/vuepress',
+                repo: 'https://github.com/misitebao/template-vuepress',
                 repoLabel: '查看源码',
-                docsRepo: 'vuejs/vuepress',
+                docsRepo: 'https://github.com/misitebao/template-vuepress',
                 docsDir: 'docs',
                 docsBranch: 'master',
                 editLinks: true,
@@ -39,7 +39,6 @@ module.exports = {
                             { text: 'CSS', link: '/book/前端编程/CSS/' }
                         ]
                     },
-                    { text: 'Github', link: 'https://github.com' }
                 ],
                 sidebar: {
                     collapsable: false,
@@ -57,15 +56,13 @@ module.exports = {
                 // 该语言在下拉菜单中的标签
                 label: '简体中文',
                 // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-                repo: 'vuejs/vuepress',
+                repo: 'https://github.com/misitebao/template-vuepress',
                 // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
                 // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
                 repoLabel: '查看源码',
-
                 // 以下为可选的编辑链接选项
-
                 // 假如你的文档仓库和项目本身不在一个仓库：
-                docsRepo: 'vuejs/vuepress',
+                docsRepo: 'https://github.com/misitebao/template-vuepress',
                 // 假如文档不是放在仓库的根目录下：
                 docsDir: 'docs',
                 // 假如文档放在一个特定的分支下：
@@ -96,7 +93,6 @@ module.exports = {
                             { text: 'CSS', link: '/zh/book/前端编程/CSS/' }
                         ]
                     },
-                    { text: 'Github', link: 'https://github.com' }
                 ],
                 sidebar: {
                     collapsable: false,
@@ -114,8 +110,8 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-            title: 'VuePress',
-            description: 'Vue-powered Static Site Generator'
+            title: 'Full Stack Manual',
+            description: `Misi's full stack manual`
         },
         '/zh/': {
             lang: 'zh-CN',
