@@ -4,13 +4,25 @@ heroImage: /misitebao.png
 actionText: 开始阅读 →
 actionLink: /zh/book/
 features:
-- title: 描述一
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 描述二
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 描述三
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 描述 1
+  details: 描述内容 1
+- title: 描述 2
+  details: 描述内容 2
+- title: 描述 3
+  details: 描述内容 3
 footer: MIT Licensed | Copyright © 2019-present 米司特包
 ---
 # README
 一个 vuepress 模板
+
+::: tip 提示
+这是一个提示
+:::
+
+::: warning 警告
+这是一个警告
+:::
+
+::: danger 危险警告
+这是一个危险警告
+:::

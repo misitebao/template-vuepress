@@ -8,17 +8,17 @@ module.exports = {
     },
     theme: undefined,
     themeConfig: {
+        logo: '/misitebao.png',
+        repo: 'https://github.com/misitebao/template-vuepress',
+        editLinks: true,
         locales: {
             '/': {
-                logo: '/misitebao.png',
                 selectText: 'Languages',
                 label: 'English',
-                repo: 'https://github.com/misitebao/template-vuepress',
                 repoLabel: '查看源码',
                 docsRepo: 'https://github.com/misitebao/template-vuepress',
                 docsDir: 'docs',
                 docsBranch: 'master',
-                editLinks: true,
                 editLinkText: 'Edit this page on GitHub',
                 lastUpdated: 'Last Updated',
                 serviceWorker: {
@@ -30,36 +30,44 @@ module.exports = {
                 algolia: {},
                 sidebarDepth: 2,
                 sidebar: 'auto',
-                nav: [
-                    { text: 'Home', link: '/book/' },
-                    {
-                        text: '前端编程',
-                        items: [
-                            { text: 'HTML', link: '/book/前端编程/HTML/' },
-                            { text: 'CSS', link: '/book/前端编程/CSS/' }
-                        ]
-                    },
-                ],
-                sidebar: {
-                    collapsable: false,
-                    '/book/前端编程/HTML/': [{
-                        title: 'HTML',
-                        collapsable: false,
-                        children: ['/book/前端编程/HTML/Header']
-                    }]
+                nav: [{
+                    text: 'Home', link: '/book/'
                 },
+                {
+                    text: 'type1',
+                    items: [
+                        { text: 'dira', link: '/book/dir-a/' },
+                        { text: 'dirb', link: '/book/dir-b/' }
+                    ]
+                }],
+                sidebar: [{
+                    title: 'dira',
+                    path: '/book/dir-a/',
+                    collapsable: false,
+                    children: [
+                        '/book/dir-a/file-1',
+                        '/book/dir-a/file-2',
+                        '/book/dir-a/file-3'
+                    ]
+                }, {
+                    title: 'dirb',
+                    path: '/book/dir-b/',
+                    collapsable: false,
+                    children: [
+                        '/book/dir-b/file-1',
+                        '/book/dir-b/file-2',
+                        '/book/dir-b/file-3']
+                }],
             },
             '/zh/': {
-                logo: '/misitebao.png',
                 // 多语言下拉菜单的标题
                 selectText: '选择语言',
                 // 该语言在下拉菜单中的标签
                 label: '简体中文',
-                // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-                repo: 'https://github.com/misitebao/template-vuepress',
                 // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
                 // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
                 repoLabel: '查看源码',
+
                 // 以下为可选的编辑链接选项
                 // 假如你的文档仓库和项目本身不在一个仓库：
                 docsRepo: 'https://github.com/misitebao/template-vuepress',
@@ -67,8 +75,6 @@ module.exports = {
                 docsDir: 'docs',
                 // 假如文档放在一个特定的分支下：
                 docsBranch: 'master',
-                // 默认是 false, 设置为 true 来启用
-                editLinks: true,
                 // 默认为 "Edit this page"
                 editLinkText: '帮助我们改善此页面！',
                 // 最后更新时间
@@ -84,24 +90,34 @@ module.exports = {
                 algolia: {},
                 sidebarDepth: 2,
                 sidebar: 'auto',
-                nav: [
-                    { text: 'Home', link: '/zh/book/' },
-                    {
-                        text: '前端编程',
-                        items: [
-                            { text: 'HTML', link: '/zh/book/前端编程/HTML/' },
-                            { text: 'CSS', link: '/zh/book/前端编程/CSS/' }
-                        ]
-                    },
-                ],
-                sidebar: {
-                    collapsable: false,
-                    '/zh/book/前端编程/HTML/': [{
-                        title: 'HTML',
-                        collapsable: false,
-                        children: ['/zh/book/前端编程/HTML/Header']
-                    }]
+                nav: [{
+                    text: '主页', link: '/zh/book/'
                 },
+                {
+                    text: '分类一',
+                    items: [
+                        { text: '目录A', link: '/zh/book/dir-a/' },
+                        { text: '目录b', link: '/zh/book/dir-b/' }
+                    ]
+                }],
+                sidebar: [{
+                    title: '目录A',
+                    path: '/zh/book/dir-a/',
+                    collapsable: false,
+                    children: [
+                        '/zh/book/dir-a/file-1',
+                        '/zh/book/dir-a/file-2',
+                        '/zh/book/dir-a/file-3'
+                    ]
+                }, {
+                    title: '目录B',
+                    path: '/zh/book/dir-b/',
+                    collapsable: false,
+                    children: [
+                        '/zh/book/dir-b/file-1',
+                        '/zh/book/dir-b/file-2',
+                        '/zh/book/dir-b/file-3']
+                }],
             }
         }
     },
