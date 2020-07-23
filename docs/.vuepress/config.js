@@ -1,6 +1,8 @@
 module.exports = {
     base: '/',//基础路径
-    head: [],
+    head: [
+        ['meta', { name: 'keywords', content: 'Go 语言,日志' }]
+    ],
     host: '0.0.0.0',
     dest: './dist',//打包输出目录
     markdown: {
