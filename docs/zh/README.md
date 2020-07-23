@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /full-stack-manual_zh.png
+heroImage: /images/full-stack-manual_zh.png
 actionText: 开始阅读 →
 actionLink: /zh/book/
 features:

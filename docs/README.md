@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /full-stack-manual.png
+heroImage: /images/full-stack-manual.png
 actionText: Start →
 actionLink: /book/
 features:

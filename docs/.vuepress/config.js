@@ -8,7 +8,7 @@ module.exports = {
     },
     theme: undefined,
     themeConfig: {
-        logo: '/misitebao.png',
+        logo: '/images/misitebao.png',
         repo: 'https://github.com/misitebao/template-vuepress',
         docsRepo: 'https://github.com/misitebao/template-vuepress',
         docsDir: 'docs',
