@@ -10,15 +10,15 @@ module.exports = {
     themeConfig: {
         logo: '/misitebao.png',
         repo: 'https://github.com/misitebao/template-vuepress',
+        docsRepo: 'https://github.com/misitebao/template-vuepress',
+        docsDir: 'docs',
+        docsBranch: 'master',
         editLinks: true,
         locales: {
             '/': {
                 selectText: 'Languages',
                 label: 'English',
-                repoLabel: '查看源码',
-                docsRepo: 'https://github.com/misitebao/template-vuepress',
-                docsDir: 'docs',
-                docsBranch: 'master',
+                repoLabel: 'Source',
                 editLinkText: 'Edit this page on GitHub',
                 lastUpdated: 'Last Updated',
                 serviceWorker: {
@@ -64,17 +64,9 @@ module.exports = {
                 selectText: '选择语言',
                 // 该语言在下拉菜单中的标签
                 label: '简体中文',
-                // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
-                // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-                repoLabel: '查看源码',
 
+                repoLabel: '查看源码',
                 // 以下为可选的编辑链接选项
-                // 假如你的文档仓库和项目本身不在一个仓库：
-                docsRepo: 'https://github.com/misitebao/template-vuepress',
-                // 假如文档不是放在仓库的根目录下：
-                docsDir: 'docs',
-                // 假如文档放在一个特定的分支下：
-                docsBranch: 'master',
                 // 默认为 "Edit this page"
                 editLinkText: '帮助我们改善此页面！',
                 // 最后更新时间
@@ -127,12 +119,12 @@ module.exports = {
         '/': {
             lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
             title: 'Full Stack Manual',
-            description: `Misi's full stack manual`
+            description: `Create the most complete knowledge Manual of the full stack`
         },
         '/zh/': {
             lang: 'zh-CN',
-            title: '米司书库',
-            description: '米司的全栈手册'
+            title: '米司全栈知识手册',
+            description: '打造最全的全栈知识手册'
         }
     }
 }
