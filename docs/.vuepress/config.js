@@ -1,7 +1,7 @@
 module.exports = {
     base: '/',//基础路径
     head: [
-        ['meta', { name: 'keywords', content: 'Go 语言,日志' }]
+        ['meta', { name: 'keywords', content: 'vuepress 模板' }]
     ],
     host: '0.0.0.0',
     dest: './dist',//打包输出目录
@@ -11,10 +11,10 @@ module.exports = {
     theme: undefined,
     themeConfig: {
         logo: '/images/misitebao.png',
-        repo: 'https://github.com/misitebao/template-vuepress',
-        docsRepo: 'https://github.com/misitebao/template-vuepress',
-        docsDir: 'docs',
-        docsBranch: 'master',
+        repo: 'https://github.com/misitebao/template-vuepress', // 顶部显示的github地址
+        docsRepo: 'https://github.com/misitebao/template-vuepress', //文档内改进页面的仓库地址
+        docsDir: 'docs', //文档目录
+        docsBranch: 'master', //分支
         editLinks: true,
         locales: {
             '/': {
@@ -32,34 +32,63 @@ module.exports = {
                 algolia: {},
                 sidebarDepth: 2,
                 sidebar: 'auto',
-                nav: [{
-                    text: 'Home', link: '/book/'
-                },
-                {
-                    text: 'type1',
-                    items: [
-                        { text: 'dira', link: '/book/dir-a/' },
-                        { text: 'dirb', link: '/book/dir-b/' }
-                    ]
-                }],
-                sidebar: [{
-                    title: 'dira',
-                    path: '/book/dir-a/',
-                    collapsable: false,
-                    children: [
-                        '/book/dir-a/file-1',
-                        '/book/dir-a/file-2',
-                        '/book/dir-a/file-3'
-                    ]
-                }, {
-                    title: 'dirb',
-                    path: '/book/dir-b/',
-                    collapsable: false,
-                    children: [
-                        '/book/dir-b/file-1',
-                        '/book/dir-b/file-2',
-                        '/book/dir-b/file-3']
-                }],
+                nav: [
+                    {
+                        text: 'Home', link: '/book/'
+                    },
+                    {
+                        text: 'type1',
+                        items: [
+                            { text: 'dira', link: '/book/dir-a/' },
+                            { text: 'dirb', link: '/book/dir-b/' }
+                        ]
+                    },
+                    {
+                        text: 'type2',
+                        items: [{
+                            text: 'group1',
+                            items: [
+                                {
+                                    text: '1',
+                                    link: '#'
+                                },
+                                {
+                                    text: '2',
+                                    link: '#'
+                                }
+                            ]
+                        },
+                        {
+                            text: 'group2',
+                            items: [
+                                {
+                                    text: '1',
+                                    link: '#'
+                                },
+                            ]
+                        }]
+                    }
+                ],
+                sidebar: [
+                    {
+                        title: 'dira',
+                        path: '/book/dir-a/',
+                        collapsable: false,
+                        children: [
+                            '/book/dir-a/file-1',
+                            '/book/dir-a/file-2',
+                            '/book/dir-a/file-3'
+                        ]
+                    }, {
+                        title: 'dirb',
+                        path: '/book/dir-b/',
+                        collapsable: false,
+                        children: [
+                            '/book/dir-b/file-1',
+                            '/book/dir-b/file-2',
+                            '/book/dir-b/file-3']
+                    }
+                ],
             },
             '/zh/': {
                 // 多语言下拉菜单的标题
@@ -84,16 +113,43 @@ module.exports = {
                 algolia: {},
                 sidebarDepth: 2,
                 sidebar: 'auto',
-                nav: [{
-                    text: '主页', link: '/zh/book/'
-                },
-                {
-                    text: '分类一',
-                    items: [
-                        { text: '目录A', link: '/zh/book/dir-a/' },
-                        { text: '目录b', link: '/zh/book/dir-b/' }
-                    ]
-                }],
+                nav: [
+                    {
+                        text: '主页', link: '/zh/book/'
+                    },
+                    {
+                        text: '分类一',
+                        items: [
+                            { text: '目录A', link: '/zh/book/dir-a/' },
+                            { text: '目录b', link: '/zh/book/dir-b/' }
+                        ]
+                    },
+                    {
+                        text: '分类二',
+                        items: [{
+                            text: '分组一',
+                            items: [
+                                {
+                                    text: '1',
+                                    link: '#'
+                                },
+                                {
+                                    text: '2',
+                                    link: '#'
+                                }
+                            ]
+                        },
+                        {
+                            text: '分组二',
+                            items: [
+                                {
+                                    text: '1',
+                                    link: '#'
+                                },
+                            ]
+                        }]
+                    }
+                ],
                 sidebar: [{
                     title: '目录A',
                     path: '/zh/book/dir-a/',
