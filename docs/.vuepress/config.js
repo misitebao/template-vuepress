@@ -150,24 +150,27 @@ module.exports = {
                         }]
                     }
                 ],
-                sidebar: [{
-                    title: '目录A',
-                    path: '/zh/book/dir-a/',
-                    collapsable: false,
-                    children: [
-                        '/zh/book/dir-a/file-1',
-                        '/zh/book/dir-a/file-2',
-                        '/zh/book/dir-a/file-3'
-                    ]
-                }, {
-                    title: '目录B',
-                    path: '/zh/book/dir-b/',
-                    collapsable: false,
-                    children: [
-                        '/zh/book/dir-b/file-1',
-                        '/zh/book/dir-b/file-2',
-                        '/zh/book/dir-b/file-3']
-                }],
+                sidebar: {
+                    '/zh/book/dir-a/': [{
+                        title: '目录A',
+                        path: '/zh/book/dir-a/',
+                        collapsable: false,
+                        children: [
+                            '/zh/book/dir-a/file-1',
+                            '/zh/book/dir-a/file-2',
+                            '/zh/book/dir-a/file-3'
+                        ]
+                    }],
+                    '/zh/book/dir-b/': [{
+                        title: '目录B',
+                        path: '/zh/book/dir-b/',
+                        collapsable: false,
+                        children: [
+                            '/zh/book/dir-b/file-1',
+                            '/zh/book/dir-b/file-2',
+                            '/zh/book/dir-b/file-3']
+                    }]
+                }
             }
         }
     },
@@ -176,13 +179,13 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-            title: 'Full Stack Manual',
-            description: `Create the most complete knowledge Manual of the full stack`
+            title: 'Template Vuepress',
+            description: `This is a vuexpress initial template`
         },
         '/zh/': {
             lang: 'zh-CN',
-            title: '米司全栈知识手册',
-            description: '打造最全的全栈知识手册'
+            title: 'Vuepress模板',
+            description: '这是一个Vuepress初始模板'
         }
     }
 }
