@@ -69,26 +69,31 @@ module.exports = {
                         }]
                     }
                 ],
-                sidebar: [
-                    {
-                        title: 'dira',
-                        path: '/book/dir-a/',
-                        collapsable: false,
-                        children: [
-                            '/book/dir-a/file-1',
-                            '/book/dir-a/file-2',
-                            '/book/dir-a/file-3'
-                        ]
-                    }, {
-                        title: 'dirb',
-                        path: '/book/dir-b/',
-                        collapsable: false,
-                        children: [
-                            '/book/dir-b/file-1',
-                            '/book/dir-b/file-2',
-                            '/book/dir-b/file-3']
-                    }
-                ],
+                sidebar: {
+                    '/book/dir-a/': [
+                        {
+                            title: 'dira',
+                            path: '/book/dir-a/',
+                            collapsable: false,
+                            children: [
+                                '/book/dir-a/file-1',
+                                '/book/dir-a/file-2',
+                                '/book/dir-a/file-3'
+                            ]
+                        }
+                    ],
+                    '/book/dir-b/': [
+                        {
+                            title: 'dirb',
+                            path: '/book/dir-b/',
+                            collapsable: false,
+                            children: [
+                                '/book/dir-b/file-1',
+                                '/book/dir-b/file-2',
+                                '/book/dir-b/file-3']
+                        }
+                    ],
+                }
             },
             '/zh/': {
                 // 多语言下拉菜单的标题
