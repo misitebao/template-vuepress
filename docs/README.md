@@ -2,14 +2,16 @@
 home: true
 heroImage: /images/banner.png
 actionText: Start →
-actionLink: /book/
+actionLink: /
+actionText2: More
+actionLink2: /
 features:
-- title: title 1
-  details: details 1
-- title: title 2
-  details: details 2
-- title: title 3
-  details: details 3
+- title: Title 1
+  details: Details 1
+- title: Title 2
+  details: Details 2
+- title: Title 3
+  details: Details 3
 footer: MIT Licensed | Copyright © 2019-present misitebao
 ---
 # README

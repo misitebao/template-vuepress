@@ -31,26 +31,26 @@ module.exports = {
                 },
                 algolia: {},
                 sidebarDepth: 2,
-                sidebar: 'auto',
+                // sidebar: 'auto',
                 nav: [
                     {
-                        text: 'Home', link: '/book/'
+                        text: 'Home', link: '/'
                     },
                     {
-                        text: 'type1',
+                        text: 'AAA',
                         items: [
-                            { text: 'dira', link: '/book/dir-a/' },
-                            { text: 'dirb', link: '/book/dir-b/' }
+                            { text: 'aaa', link: '/AAA/aaa' },
+                            { text: 'bbb', link: '/AAA/bbb' }
                         ]
                     },
                     {
-                        text: 'type2',
+                        text: 'BBB',
                         items: [{
-                            text: 'group1',
+                            text: 'Group1',
                             items: [
                                 {
-                                    text: '1',
-                                    link: '#'
+                                    text: 'readme',
+                                    link: '/BBB/'
                                 },
                                 {
                                     text: '2',
@@ -59,7 +59,7 @@ module.exports = {
                             ]
                         },
                         {
-                            text: 'group2',
+                            text: 'Group2',
                             items: [
                                 {
                                     text: '1',
@@ -70,27 +70,25 @@ module.exports = {
                     }
                 ],
                 sidebar: {
-                    '/book/dir-a/': [
+                    '/AAA/': [
                         {
-                            title: 'dira',
-                            path: '/book/dir-a/',
+                            title: 'AAAAAAAAAA',
+                            path: '/AAA/aaa',
                             collapsable: false,
                             children: [
-                                '/book/dir-a/file-1',
-                                '/book/dir-a/file-2',
-                                '/book/dir-a/file-3'
+                                // {
+                                //     title:"hahhahahaa",
+                                //     path:"https://baidu.com"
+                                // }
                             ]
                         }
                     ],
-                    '/book/dir-b/': [
+                    '/BBB/': [
                         {
-                            title: 'dirb',
-                            path: '/book/dir-b/',
+                            title: 'BBBBBBBBBB',
+                            path: '/BBB/',
                             collapsable: false,
-                            children: [
-                                '/book/dir-b/file-1',
-                                '/book/dir-b/file-2',
-                                '/book/dir-b/file-3']
+                            children: []
                         }
                     ],
                 }
@@ -117,26 +115,26 @@ module.exports = {
                 // 当前 locale 的 algolia docsearch 选项
                 algolia: {},
                 sidebarDepth: 2,
-                sidebar: 'auto',
+                // sidebar: 'auto',
                 nav: [
                     {
-                        text: '主页', link: '/zh/book/'
+                        text: '主页', link: '/zh/AAA/'
                     },
                     {
-                        text: '分类一',
+                        text: 'AAA',
                         items: [
-                            { text: '目录A', link: '/zh/book/dir-a/' },
-                            { text: '目录b', link: '/zh/book/dir-b/' }
+                            { text: 'aaa', link: '/zh/AAA/aaa' },
+                            { text: 'bbb', link: '/zh/AAA/bbb' }
                         ]
                     },
                     {
-                        text: '分类二',
+                        text: 'BBB',
                         items: [{
-                            text: '分组一',
+                            text: 'Group1',
                             items: [
                                 {
-                                    text: '1',
-                                    link: '#'
+                                    text: 'readme',
+                                    link: '/BBB/'
                                 },
                                 {
                                     text: '2',
@@ -145,7 +143,7 @@ module.exports = {
                             ]
                         },
                         {
-                            text: '分组二',
+                            text: 'Group2',
                             items: [
                                 {
                                     text: '1',
@@ -156,25 +154,22 @@ module.exports = {
                     }
                 ],
                 sidebar: {
-                    '/zh/book/dir-a/': [{
-                        title: '目录A',
-                        path: '/zh/book/dir-a/',
-                        collapsable: false,
-                        children: [
-                            '/zh/book/dir-a/file-1',
-                            '/zh/book/dir-a/file-2',
-                            '/zh/book/dir-a/file-3'
-                        ]
-                    }],
-                    '/zh/book/dir-b/': [{
-                        title: '目录B',
-                        path: '/zh/book/dir-b/',
-                        collapsable: false,
-                        children: [
-                            '/zh/book/dir-b/file-1',
-                            '/zh/book/dir-b/file-2',
-                            '/zh/book/dir-b/file-3']
-                    }]
+                    '/zh/AAA/': [
+                        {
+                            title: 'AAAAAAAAAA',
+                            path: '/zh/AAA/aaa',
+                            collapsable: false,
+                            children: []
+                        }
+                    ],
+                    '/zh/BBB/': [
+                        {
+                            title: 'BBBBBBBBBB',
+                            path: '/zh/BBB/',
+                            collapsable: false,
+                            children: []
+                        }
+                    ],
                 }
             }
         }
