@@ -8,6 +8,7 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
+    plugins: ['@vuepress/back-to-top'],
     theme: undefined,
     themeConfig: {
         logo: '/images/misitebao.png',
